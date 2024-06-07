@@ -41,24 +41,6 @@ const featuredWebinars = [
     slug: "digital-music-marketing",
     isFeatured: true,
   },
-  {
-    title: "Digital Music Marketing",
-    description: "NextJS",
-    slug: "digital-music-marketing",
-    isFeatured: true,
-  },
-  {
-    title: "Digital Music Marketing",
-    description: "C++",
-    slug: "digital-music-marketing",
-    isFeatured: true,
-  },
-  {
-    title: "Digital Music Marketing",
-    description: "Tailwind",
-    slug: "digital-music-marketing",
-    isFeatured: true,
-  },
 ];
 function UpcomingWebinars() {
   return (
@@ -81,14 +63,14 @@ function UpcomingWebinars() {
             }))}
           />
         </div>
-        {/* <div className="mt-10 text-center">
+        <div className="mt-10 text-center">
           <Link
-            href={"/webinars"}
+            href={"/about"}
             className="px-4 py-2 rounded border border-neutral-600 text-neutral-700 bg-white hover:bg-gray-100 transition duration-200"
           >
-            View All Webinars
+            View All Skills
           </Link>
-        </div> */}
+        </div>
       </div>
     </div>
   );

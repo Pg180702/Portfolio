@@ -42,7 +42,7 @@ function page() {
                   as="button"
                   className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
                 >
-                  Try now →
+                  <Link href={"/projectdetail"}>Try now →</Link>
                 </CardItem>
                 <CardItem
                   translateZ={20}
