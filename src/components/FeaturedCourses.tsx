@@ -2,6 +2,7 @@
 import projectsData from "../data/music_courses.json";
 import Link from "next/link";
 import { BackgroundGradient } from "./ui/background-gradient";
+import Image from "next/image";
 interface Course {
   id: number;
   title: string;
@@ -30,26 +31,66 @@ function FeaturedCourses() {
       </div>
       <div className="mt-10 mx-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
-          {featuredProjects.map((project: Course) => (
-            <div key={project.id} className="flex justify-center">
-              <BackgroundGradient className="flex flex-col rounded-[22px] bg-white dark:bg-zinc-900 overflow-hidden h-full max-w-sm">
-                <div className="p-4 sm:p-6 flex flex-col items-center text-center flex-grow">
-                  <img
-                    src="https://images.unsplash.com/photo-1625244724120-1fd1d34d00f6?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG90ZWxzfGVufDB8fDB8fHww"
-                    style={{ background: "cover" }}
-                  />
+          <div className="flex justify-center">
+            <BackgroundGradient className="flex flex-col rounded-[22px] bg-white dark:bg-zinc-900 overflow-hidden h-full max-w-sm">
+              <div className="p-4 sm:p-6 flex flex-col items-center text-center flex-grow">
+                <img
+                  src="/portfoliophotos/Screenshot (1302).png"
+                  style={{ background: "cover" }}
+                />
 
-                  <p className="text-lg sm:text-xl text-black mt-4 mb-2 dark:text-neutral-200">
-                    {project.title}
-                  </p>
-                  <p className="text-sm text-neutral-600 dark:text-neutral-400 flex-grow">
-                    {project.description}
-                  </p>
-                  <Link href={`/projects/${project.slug}`}>Learn More</Link>
-                </div>
-              </BackgroundGradient>
-            </div>
-          ))}
+                <p className="text-lg sm:text-xl text-black mt-4 mb-2 dark:text-neutral-200">
+                  HotelMERN
+                </p>
+                <p className="text-sm text-neutral-600 dark:text-neutral-400 flex-grow">
+                  A FullStack Hotel Booking App that provides dynamic room check
+                  functionality and lets you make your bookings
+                </p>
+                <Link href={`/projects`}>Learn More</Link>
+              </div>
+            </BackgroundGradient>
+          </div>
+          <div className="flex justify-center">
+            <BackgroundGradient className="flex flex-col rounded-[22px] bg-white dark:bg-zinc-900 overflow-hidden h-full max-w-sm">
+              <div className="p-4 sm:p-6 flex flex-col items-center text-center flex-grow">
+                <img
+                  src="/portfoliophotos/Screenshot (1313).png"
+                  style={{ background: "cover" }}
+                />
+
+                <p className="text-lg sm:text-xl text-black mt-4 mb-2 dark:text-neutral-200">
+                  BlogMan
+                </p>
+                <p className="text-sm text-neutral-600 dark:text-neutral-400 flex-grow">
+                  A FullStack Blog App that allows users to create blogs, read
+                  other's blogs with proper authentication for Login and
+                  Register
+                </p>
+                <Link href={`/projects`}>Learn More</Link>
+              </div>
+            </BackgroundGradient>
+          </div>
+          <div className="flex justify-center">
+            <BackgroundGradient className="flex flex-col rounded-[22px] bg-white dark:bg-zinc-900 overflow-hidden h-full max-w-sm">
+              <div className="p-4 sm:p-6 flex flex-col items-center text-center flex-grow">
+                <img
+                  src="/portfoliophotos/github-logo.png"
+                  height="8rem"
+                  style={{ background: "cover", height: "10rem" }}
+                  alt=""
+                />
+
+                <p className="text-lg sm:text-xl text-black mt-4 mb-2 dark:text-neutral-200">
+                  Mediahub API
+                </p>
+                <p className="text-sm text-neutral-600 dark:text-neutral-400 flex-grow">
+                  A Backend API that provides functionality of apps such as
+                  Youtube and Twitter.
+                </p>
+                <Link href={`/projects`}>Learn More</Link>
+              </div>
+            </BackgroundGradient>
+          </div>
         </div>
       </div>
       <div className="mt-20 text-center">

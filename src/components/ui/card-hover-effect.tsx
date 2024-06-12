@@ -50,7 +50,7 @@ export const HoverEffect = ({
           </AnimatePresence>
           <Card>
             <CardTitle>
-              <img src={item.title} style={{ height: "5rem", width: "5rem" }} />
+              <img src={item.title} style={{ height: "5rem", width: "6rem" }} />
             </CardTitle>
             <CardDescription>{item.description}</CardDescription>
           </Card>

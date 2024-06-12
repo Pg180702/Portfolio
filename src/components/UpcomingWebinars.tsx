@@ -17,27 +17,29 @@ const featuredWebinars = [
     isFeatured: true,
   },
   {
-    title: "Mastering Your Instrument",
+    title:
+      "https://static.vecteezy.com/system/resources/previews/027/127/463/original/javascript-logo-javascript-icon-transparent-free-png.png",
     description: "JavaScript",
     slug: "mastering-your-instrument",
     isFeatured: true,
   },
   {
-    title: "Music Production Essentials",
-    description: "MongoDB",
+    title:
+      "https://cdn.dribbble.com/userupload/9602981/file/original-e6f9ef9e2c570d0d612b1775155a4d63.png",
+    description: "NextJS",
     slug: "music-production-essentials",
     isFeatured: true,
   },
   // Added two more webinars
   {
-    title: "Live Performance Techniques",
-    description: "HTML",
+    title: "https://1000logos.net/wp-content/uploads/2020/08/MongoDB-Logo.jpg",
+    description: "MongoDB",
     slug: "live-performance-techniques",
     isFeatured: true,
   },
   {
-    title: "Digital Music Marketing",
-    description: "CSS",
+    title: "https://logowik.com/content/uploads/images/nodejs.jpg",
+    description: "NodeJS",
     slug: "digital-music-marketing",
     isFeatured: true,
   },

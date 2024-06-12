@@ -9,7 +9,7 @@ function Footer() {
           <ul>
             <li>
               <a
-                href="#"
+                href="/"
                 className="hover:text-white transition-colors duration-300"
               >
                 Home
@@ -17,7 +17,7 @@ function Footer() {
             </li>
             <li>
               <a
-                href="#"
+                href="/about"
                 className="hover:text-white transition-colors duration-300"
               >
                 About
@@ -25,15 +25,15 @@ function Footer() {
             </li>
             <li>
               <a
-                href="#"
+                href="/projects"
                 className="hover:text-white transition-colors duration-300"
               >
-                Courses
+                Projects
               </a>
             </li>
             <li>
               <a
-                href="#"
+                href="/contact"
                 className="hover:text-white transition-colors duration-300"
               >
                 Contact
@@ -48,13 +48,13 @@ function Footer() {
               href="#"
               className="hover:text-white transition-colors duration-300"
             >
-              Facebook
+              LinkedIn
             </a>
             <a
               href="#"
               className="hover:text-white transition-colors duration-300"
             >
-              Twitter
+              Gmail
             </a>
             <a
               href="#"
@@ -66,9 +66,9 @@ function Footer() {
         </div>
         <div>
           <h2 className="text-white text-lg font-semibold mb-4">Contact Us</h2>
-          <p>New Delhi, India</p>
-          <p>Delhi 10001</p>
-          <p>Email: info@musicschool.com</p>
+          <p>Uttar Pradesh, India</p>
+          <p>Bareilly 243001</p>
+          <p>Email: pranjalgangwar1807@gmail.com</p>
           <p>Phone: (123) 456-7890</p>
         </div>
       </div>
