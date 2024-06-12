@@ -1,7 +1,17 @@
 "use client";
-import { motion } from "framer-motion";
-import { HeroHighlight, Highlight } from "@/components/ui/hero-highlight";
-function page() {
+function page({ params }: { params: { projectId: Number } }) {
+  const projects = [
+    { id: 1, name: "Project 1", description: "Description for project 1" },
+    { id: 2, name: "Project 2", description: "Description for project 2" },
+    { id: 3, name: "Project 3", description: "Description for project 3" },
+  ];
+  const projectId = params.projectId;
+  // Filter projects array to find the project with matching id
+  const project = projects.find(
+    (project) => project.id === parseInt(projectId.toString())
+  );
+
+  console.log(project);
   return (
     <>
       <div className="m-6 mb-2 grid sm:grid-cols-2 gap-4 sm:m-40">
@@ -55,28 +65,17 @@ function page() {
         </div>
       </div>
       <div className="sm:m-40 mt-2 m-6 flex items-center">
-        It is a long established fact that a reader will be distracted by the
-        readable content of a page when looking at its layout. The point of
-        using Lorem Ipsum is that it has a more-or-less normal distribution of
-        letters, as opposed to using 'Content here, content here', making it
-        look like readable English. Many desktop publishing packages and web
-        page editors now use Lorem Ipsum as their default model text, and a
-        search for 'lorem ipsum' will uncover many web sites still in their
-        infancy. Various versions have evolved over the years, sometimes by
-        accident, sometimes on purpose (injected humour and the like).There are
-        many variations of passages of Lorem Ipsum available, but the majority
-        have suffered alteration in some form, by injected humour, or randomised
-        words which don't look even slightly believable. If you are going to use
-        a passage of Lorem Ipsum, you need to be sure there isn't anything
-        embarrassing hidden in the middle of text. All the Lorem Ipsum
-        generators on the Internet tend to repeat predefined chunks as
-        necessary, making this the first true generator on the Internet. It uses
-        a dictionary of over 200 Latin words, combined with a handful of model
-        sentence structures, to generate Lorem Ipsum which looks reasonable. The
-        generated Lorem Ipsum is therefore always free from repetition, injected
-        humour, or non-characteristic words etc.
+        {project && (
+          <>
+            <h1 style={{ color: "white" }}>{project.name}</h1>
+            <p>{project.description}</p>
+          </>
+        )}
+        {/* Adding a break tag */}
+        <h1>break</h1>
       </div>
     </>
   );
 }
+
 export default page;
