@@ -14,9 +14,7 @@ interface Course {
 }
 function FeaturedCourses() {
   //neeche course ka datatype bataaya hai Course hai
-  const featuredProjects = projectsData.courses.filter(
-    (course: Course) => course.isFeatured
-  );
+
   return (
     <div className="py-12 bg-gray-900">
       <div>
@@ -46,7 +44,7 @@ function FeaturedCourses() {
                   A FullStack Hotel Booking App that provides dynamic room check
                   functionality and lets you make your bookings
                 </p>
-                <Link href={`/projects`}>Learn More</Link>
+                <Link href={`/projectdetail/1`}>Learn More</Link>
               </div>
             </BackgroundGradient>
           </div>
@@ -66,7 +64,7 @@ function FeaturedCourses() {
                   other's blogs with proper authentication for Login and
                   Register
                 </p>
-                <Link href={`/projects`}>Learn More</Link>
+                <Link href={`/projectdetail/2`}>Learn More</Link>
               </div>
             </BackgroundGradient>
           </div>
@@ -87,7 +85,7 @@ function FeaturedCourses() {
                   A Backend API that provides functionality of apps such as
                   Youtube and Twitter.
                 </p>
-                <Link href={`/projects`}>Learn More</Link>
+                <Link href={`/projectdetail/3`}>Learn More</Link>
               </div>
             </BackgroundGradient>
           </div>
