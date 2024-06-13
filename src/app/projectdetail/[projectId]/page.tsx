@@ -1,5 +1,6 @@
 "use client";
 
+import { Meteors } from "@/components/ui/meteors";
 import Link from "next/link";
 
 function page({ params }: { params: { projectId: Number } }) {
@@ -22,8 +23,8 @@ function page({ params }: { params: { projectId: Number } }) {
         "/portfoliophotos/Screenshot (1309).png",
         "/portfoliophotos/Screenshot (1312).png",
       ],
-      liveLink: "",
-      sourceLink: "",
+      liveLink: "https://hotel-booking2.vercel.app/",
+      sourceLink: "https://github.com/Pg180702/HotelBooking2",
     },
     {
       id: 2,
@@ -42,8 +43,8 @@ function page({ params }: { params: { projectId: Number } }) {
         "/portfoliophotos/Screenshot (1317).png",
         "/portfoliophotos/Screenshot (1318).png",
       ],
-      liveLink: "",
-      sourceLink: "",
+      liveLink: "https://blog-man-eta.vercel.app/",
+      sourceLink: "https://github.com/Pg180702/BlogMan",
     },
     {
       id: 3,
@@ -56,7 +57,25 @@ function page({ params }: { params: { projectId: Number } }) {
       ],
       images: [],
       liveLink: "",
-      sourceLink: "",
+      sourceLink: "https://github.com/Pg180702/YT-Twitter-Backend",
+    },
+    {
+      id: 4,
+      name: "StreamingHub",
+      description: [
+        "Developed a Frontend Application that utilizes Youtube's API to fetch data and render videos to play.",
+        "Implemented a dynamic user interface allowing users to filter videos based on categories.",
+        "Integrated a sidebar in the video player that shows suggestions based on the current video being played.",
+        "Implemented a search feature as well that allows users to search videos using YouTube's API.",
+      ],
+      images: [
+        "/portfoliophotos/Screenshot (1329).png",
+        "/portfoliophotos/Screenshot (1330).png",
+        "/portfoliophotos/Screenshot (1331).png",
+        "/portfoliophotos/Screenshot (1332).png",
+      ],
+      liveLink: "",
+      sourceLink: "https://github.com/Pg180702/StreamingHub",
     },
   ];
 
@@ -110,19 +129,33 @@ function page({ params }: { params: { projectId: Number } }) {
         )}
       </div>
       <div className="flex items-center justify-center gap-6 sm:m-20 mt-2 m-6">
-        <Link
-          href={"https://hotel-booking2.vercel.app/"}
-          className="px-4 py-2 rounded border border-neutral-600 text-neutral-700 bg-white hover:bg-gray-100 transition duration-200"
-        >
-          Live Link
-        </Link>
-        <Link
-          href={"/projects"}
-          className="px-4 py-2 rounded border border-neutral-600 text-neutral-700 bg-white hover:bg-gray-100 transition duration-200"
-        >
-          Source Code
-        </Link>
+        {project?.liveLink !== "" ? (
+          <>
+            <Link
+              href={project?.liveLink}
+              className="px-4 py-2 rounded border border-neutral-600 text-neutral-700 bg-white hover:bg-gray-100 transition duration-200"
+            >
+              Live Link
+            </Link>
+          </>
+        ) : (
+          <></>
+        )}
+
+        {project?.sourceLink !== "" ? (
+          <>
+            <Link
+              href={project?.sourceLink}
+              className="px-4 py-2 rounded border border-neutral-600 text-neutral-700 bg-white hover:bg-gray-100 transition duration-200"
+            >
+              Source Code
+            </Link>
+          </>
+        ) : (
+          <></>
+        )}
       </div>
+      {/* <Meteors number={20} /> */}
     </>
   );
 }

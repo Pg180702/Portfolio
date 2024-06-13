@@ -13,7 +13,7 @@
       "id": 2,
       "title": "BlogMan",
       "slug": "FullStack Web App",
-      "description": " fullStack Blog Application",
+      "description": "AcFullStack Blog Application",
       "isFeatured": true,
       "image": "/portfoliophotos/Screenshot (1313).png"
     },
@@ -26,6 +26,15 @@
 
       "isFeatured": true,
       "image": "/portfoliophotos/github-logo.png"
+    },
+    {
+      "id": 4,
+      "title": "StreamingHub",
+      "slug": "Frontend App",
+      "description": "Frontend website that utilizes Youtube Api",
+
+      "isFeatured": true,
+      "image": "/portfoliophotos/Screenshot (1329).png"
     }
   ]
 }
