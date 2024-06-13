@@ -45,27 +45,27 @@ function Footer() {
           <h2 className="text-white text-lg font-semibold mb-4">Follow Us</h2>
           <div className="flex space-x-4">
             <a
-              href="#"
+              href="https://www.linkedin.com/in/pranjal-gangwar-147051238/"
               className="hover:text-white transition-colors duration-300"
             >
               LinkedIn
             </a>
             <a
-              href="#"
+              href="mailto:pranjalgangwar1807@gmail.com"
               className="hover:text-white transition-colors duration-300"
             >
               Gmail
             </a>
             <a
-              href="#"
+              href="https://github.com/Pg180702"
               className="hover:text-white transition-colors duration-300"
             >
-              Instagram
+              Github
             </a>
           </div>
         </div>
         <div>
-          <h2 className="text-white text-lg font-semibold mb-4">Contact Us</h2>
+          <h2 className="text-white text-lg font-semibold mb-4">Contact Me</h2>
           <p>Uttar Pradesh, India</p>
           <p>Bareilly 243001</p>
           <p>Email: pranjalgangwar1807@gmail.com</p>

@@ -20,12 +20,16 @@ function HeroSection() {
           Welcome to my website, your one-stop destination to learn all about me
           and my work.
           <div className="mt-4">
-            <Link href={"/projects"}>
+            <Link
+              href={
+                "https://drive.google.com/file/d/1RNlLm5x9667-M_nThz1zinMl7FfebZAW/view?usp=sharing"
+              }
+            >
               <Button
                 borderRadius="1.75rem"
                 className="bg-white dark:bg-black text-black dark:text-white border-neutral-200 dark:border-slate-800"
               >
-                Explore Projects
+                Download CV
               </Button>
             </Link>
           </div>
