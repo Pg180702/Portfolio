@@ -69,7 +69,6 @@ function Footer() {
           <p>Uttar Pradesh, India</p>
           <p>Bareilly 243001</p>
           <p>Email: pranjalgangwar1807@gmail.com</p>
-          <p>Phone: (123) 456-7890</p>
         </div>
       </div>
     </footer>
