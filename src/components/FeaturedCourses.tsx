@@ -60,9 +60,9 @@ function FeaturedCourses() {
                   BlogMan
                 </p>
                 <p className="text-sm text-neutral-600 dark:text-neutral-400 flex-grow">
-                  A FullStack Blog App that allows users to create blogs, read
-                  other's blogs with proper authentication for Login and
-                  Register
+                  A FullStack Blog App that allows users to create blogs&lsquo;
+                  read other&apos;s blogs with proper authentication for Login
+                  and Register
                 </p>
                 <Link href={"/projectdetail/2"}>Learn More</Link>
               </div>

@@ -15,10 +15,10 @@ function HeroSection() {
           I'm A <FlipWords words={words} /> Developer
         </h1>
         <p className="mt-4 font-normal text-base md:text-lg text-neutral-300 max-w-lg mx-auto">
-          Hi, I'm Pranjal Gangwar, a final-year student at IIIT Nagpur with a
-          passion for full-stack development, especially in the backend domain.
-          Welcome to my website, your one-stop destination to learn all about me
-          and my work.
+          Hi, I&apos;m Pranjal Gangwar&lsquo; a final-year student at IIIT
+          Nagpur with a passion for full-stack development&lsquo; especially in
+          the backend domain. Welcome to my website&lsquo; your one-stop
+          destination to learn all about me and my work.
           <div className="mt-4">
             <Link
               href={

@@ -96,8 +96,8 @@ function page({ params }: { params: { projectId: Number } }) {
       ) : (
         <>
           <div className="m-6 mb-2 grid sm:grid-cols-2 gap-4 sm:m-40">
-            {project?.images.map((image) => (
-              <div>
+            {project?.images.map((image, index) => (
+              <div key={index}>
                 <img
                   src={image}
                   height="100%"
