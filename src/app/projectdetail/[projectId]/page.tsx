@@ -132,7 +132,7 @@ function page({ params }: { params: { projectId: Number } }) {
         {project?.liveLink !== "" ? (
           <>
             <Link
-              href={project?.liveLink}
+              href={project?.liveLink ?? ""}
               className="px-4 py-2 rounded border border-neutral-600 text-neutral-700 bg-white hover:bg-gray-100 transition duration-200"
             >
               Live Link
@@ -145,7 +145,7 @@ function page({ params }: { params: { projectId: Number } }) {
         {project?.sourceLink !== "" ? (
           <>
             <Link
-              href={project?.sourceLink}
+              href={project?.sourceLink ?? ""}
               className="px-4 py-2 rounded border border-neutral-600 text-neutral-700 bg-white hover:bg-gray-100 transition duration-200"
             >
               Source Code
