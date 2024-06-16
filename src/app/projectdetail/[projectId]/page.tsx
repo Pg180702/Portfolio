@@ -112,7 +112,7 @@ function page({ params }: { params: { projectId: Number } }) {
 
       <div className="sm:m-20 mt-2 m-6 flex justify-center">
         <h1 style={{ color: "white" }} className="text-5xl text-center">
-          {project.name}
+          {project?.name}
         </h1>
       </div>
       <div className="sm:m-20 mt-2 m-6 flex items-center justify-center">
