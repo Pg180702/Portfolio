@@ -13,7 +13,7 @@ import { IoLogoJavascript } from "react-icons/io";
 import { SiVercel } from "react-icons/si";
 import { DiMongodb } from "react-icons/di";
 import { AiOutlineConsoleSql } from "react-icons/ai";
-import { SiTailwindcss } from "react-icons/si";
+import { RiNextjsFill } from "react-icons/ri";
 import Link from "next/link";
 function page() {
   return (
@@ -80,13 +80,12 @@ function page() {
           Hi Everyone, I am Pranjal Gangwar, a student at IIIT Nagpur,
           demonstrating a strong passion for technology and software
           development. As a proficient full-stack developer, I possess extensive
-          knowledge of the MERN (MongoDB, Express.js, ReactJs/Next Js, Node.js)
+          knowledge of the MERN (MongoDB, Express.js, ReactJs, Node.js)
           stack, showcasing the ability to create robust and scalable web
-          applications. I stand out with my adept coding skills, particularly
-          excelling in Data Structures and Algorithms, which I have learned and
+          applications. Recently I have been exploring newer technologies like NextJS. I stand out with my coding skills, particularly
+          in Data Structures and Algorithms, which I have learned and
           practiced throughout my academic journey. Eager to apply my skills in
-          a professional setting, I am actively seeking job opportunities in the
-          technology sector, where my expertise and enthusiasm can contribute to
+          a professional setting, where my expertise and enthusiasm can contribute to
           innovative projects and solutions.
         </p>
         <Link href={"/projects"} className="btn btn-primary mt-6">
@@ -134,8 +133,8 @@ function page() {
           <p className="text-center mt-2">SQL</p>
         </div>
         <div className="flex flex-col items-center">
-          <SiTailwindcss className="text-8xl" />
-          <p className="text-center mt-2">Tailwind CSS</p>
+          <RiNextjsFill className="text-8xl" />
+          <p className="text-center mt-2">NextJS</p>
         </div>
       </div>
     </div>

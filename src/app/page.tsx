@@ -14,7 +14,6 @@ export default function Home() {
       <WhyChooseUs />
       <Testimonials />
       <UpcomingWebinars />
-      {/* <Instructors /> */}
       <Footer />
     </main>
   );
