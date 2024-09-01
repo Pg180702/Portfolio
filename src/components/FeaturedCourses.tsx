@@ -13,7 +13,7 @@ interface Course {
   isFeatured: boolean;
 }
 function FeaturedCourses() {
-  //neeche course ka datatype bataaya hai Course hai
+  //neeche course ka datatype bataaya hai Course hai ye typescript hai
 
   return (
     <div className="py-12 bg-gray-900">
